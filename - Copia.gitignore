@@ -1,0 +1,19 @@
+# Ignorar dependências
+**/node_modules/
+**/dist/
+
+# Ignorar arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Ignorar arquivos temporários
+.DS_Store
+*.log
+
+# Cache do GitHub Pages
+**/.cache/
+
+# Diretórios de IDEs
+.idea/
+.vscode/
