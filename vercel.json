@@ -1,6 +1,0 @@
-{
-  "rootDirectory": "front-caixa",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vue"
-}
