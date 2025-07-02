@@ -111,7 +111,7 @@
       async deletarVenda(id) {
         try {
           
-    await fetch(`http://sistema-caixa-hyyk.onrender.com/deletarVenda/${id}`, {
+    await fetch(`https://sistema-caixa-hyyk.onrender.com/deletarVenda/${id}`, {
       method: 'DELETE',
     });
     alert('Venda deletada com sucesso!');
@@ -125,7 +125,7 @@
 
       async total() {
         try {
-    const resposta = await fetch('https://sistema-caixa-hyyk.onrender.com/totalvendas', {
+    const resposta = await fetch('https://sistema-caixa-hyyk.onrender.com/totalVendas', {
         method: 'GET'
     });
 
