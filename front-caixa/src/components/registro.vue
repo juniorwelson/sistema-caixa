@@ -110,11 +110,12 @@ export default {
       };
 
       try {
-        const res = await fetch('http://localhost:3000/finalizar', {
+        const res = await fetch('https://sistema-caixa-hyyk.onrender.com/finalizar', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(dados)
         });
+        fetch('')
 
         if (!res.ok) {
           throw new Error('Erro na resposta do servidor');

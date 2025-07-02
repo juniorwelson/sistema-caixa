@@ -82,7 +82,7 @@
       },
       async carregarVendas() {
         try {
-          const res = await fetch('http://localhost:3000/vendas');
+          const res = await fetch('https://sistema-caixa-hyyk.onrender.com/vendas');
           const data = await res.json();
           this.vendas = data;
         } catch (error) {
@@ -108,8 +108,9 @@
   
       },
       async deletarVenda(id) {
-  try {
-    await fetch(`http://localhost:3000/deletarVenda/${id}`, {
+        try {
+
+    await fetch(`http:sistema-caixa-hyyk.onrender.com/deletarVenda/${id}`, {
       method: 'DELETE',
     });
     alert('Venda deletada com sucesso!');
@@ -123,7 +124,7 @@
 
       async total() {
         try {
-    const resposta = await fetch('http://localhost:3000/totalVendas', {
+    const resposta = await fetch('http://sistema-caixa-hyyk.onrender.com/totalVendas', {
         method: 'GET'
     });
 
