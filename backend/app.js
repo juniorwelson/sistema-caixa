@@ -14,20 +14,23 @@ app.get('/', (req, res) => {
 });
   
 
-app.listen(3000, () => {
-    console.log(`estou na porta ${3000}`)
-})
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+});
+
 //conectando com o banco de dados
 let conexao
    async function conectarBanco() {
        try {
            conexao = await mysql.createConnection({
-               host: 'nozomi.proxy.rlwy.net',
-               port: 16752,
-               user: 'root',
-               password: 'xvaYEmvOrrOQAUSyReciboubzGXJcRse',
-               database: 'railway'
-        });
+               host: process.env.DB_HOST,
+               port: process.env.DB_PORT,
+               user: process.env.DB_USER,
+               password: process.env.DB_PASSWORD,
+               database: process.env.DB_NAME
+           });
            console.log("conexao com o banco de dados feita")
        }
        catch (error) {
