@@ -34,7 +34,8 @@ let conexao
            console.log("conexao com o banco de dados feita")
        }
        catch (error) {
-           console.error('erro ao conectar com banco')
+           console.error('erro ao conectar com banco');
+           console.error(error)
        }
 }
    conectarBanco()
