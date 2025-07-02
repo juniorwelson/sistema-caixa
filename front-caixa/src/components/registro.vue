@@ -110,7 +110,7 @@ export default {
       };
 
       try {
-        const apiurl = import.meta.env.VITE_API_URL;
+        const apiurl = process.env.VUE_APP_API_URL;
         const res = await fetch(`${apiurl}/finalizar`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
