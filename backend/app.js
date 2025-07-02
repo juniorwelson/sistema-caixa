@@ -1,6 +1,9 @@
 import express from 'express'
 import mysql from 'mysql2/promise'
 import cors from 'cors'
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 const app = express()
 app.use(express.json())
@@ -19,11 +22,12 @@ let conexao
    async function conectarBanco() {
        try {
            conexao = await mysql.createConnection({
-               host: 'localhost',
+               host: 'nozomi.proxy.rlwy.net',
+               port: 16752,
                user: 'root',
-               password: '2003',
-               database: 'meubanco'
-           });
+               password: 'xvaYEmvOrrOQAUSyReciboubzGXJcRse',
+               database: 'railway'
+        });
            console.log("conexao com o banco de dados feita")
        }
        catch (error) {
