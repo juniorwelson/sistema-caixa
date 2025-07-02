@@ -83,7 +83,7 @@
       async carregarVendas() {
         try {
           
-          const res = await fetch('https://https://sistema-caixa-hyyk.onrender.com/vendas');
+          const res = await fetch('https://sistema-caixa-hyyk.onrender.com/vendas');
           const data = await res.json();
           this.vendas = data;
         } catch (error) {
@@ -111,7 +111,7 @@
       async deletarVenda(id) {
         try {
           
-    await fetch(`http:https://sistema-caixa-hyyk.onrender.com/deletarVenda/${id}`, {
+    await fetch(`http://sistema-caixa-hyyk.onrender.com/deletarVenda/${id}`, {
       method: 'DELETE',
     });
     alert('Venda deletada com sucesso!');
@@ -125,7 +125,7 @@
 
       async total() {
         try {
-    const resposta = await fetch('http://https://sistema-caixa-hyyk.onrender.com/totalvendas', {
+    const resposta = await fetch('https://sistema-caixa-hyyk.onrender.com/totalvendas', {
         method: 'GET'
     });
 
