@@ -83,7 +83,7 @@
       
       async carregarVendas() {
         try {
-          const apiurl = import.meta.env.VITE_API_URL;
+          const apiurl = process.env.VUE_APP_API_URL;;
           const res = await fetch(`${apiurl}/vendas`);
           const data = await res.json();
           this.vendas = data;
@@ -111,7 +111,7 @@
       },
       async deletarVenda(id) {
         try {
-          const apiurl = import.meta.env.VITE_API_URL;    
+          const apiurl = process.env.VUE_APP_API_URL;   
     await fetch(`${apiurl}/deletarVenda/${id}`, {
       method: 'DELETE',
     });
@@ -127,7 +127,7 @@
       async total() {
         
         try {
-          const apiurl = import.meta.env.VITE_API_URL;
+          const apiurl = process.env.VUE_APP_API_URL;
     const resposta = await fetch(`${apiurl}/totalVendas`, {
         method: 'GET'
     });
