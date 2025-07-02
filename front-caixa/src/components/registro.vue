@@ -110,7 +110,8 @@ export default {
       };
 
       try {
-        const res = await fetch('https://sistema-caixa-hyyk.onrender.com/finalizar', {
+        const apiurl = import.meta.env.VITE_API_URL;
+        const res = await fetch(`${apiurl}/finalizar`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(dados)

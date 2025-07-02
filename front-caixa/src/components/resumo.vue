@@ -66,7 +66,7 @@
       };
     },
     methods: {
-
+      
       verificarSenha() {
         const minhaSenha = 1234
         if (this.senha == minhaSenha) {
@@ -80,10 +80,11 @@
          
         }
       },
+      
       async carregarVendas() {
         try {
-          
-          const res = await fetch('https://sistema-caixa-hyyk.onrender.com/vendas');
+          const apiurl = import.meta.env.VITE_API_URL;
+          const res = await fetch(`${apiurl}/vendas`);
           const data = await res.json();
           this.vendas = data;
         } catch (error) {
@@ -110,8 +111,8 @@
       },
       async deletarVenda(id) {
         try {
-          
-    await fetch(`https://sistema-caixa-hyyk.onrender.com/deletarVenda/${id}`, {
+          const apiurl = import.meta.env.VITE_API_URL;    
+    await fetch(`${apiurl}/deletarVenda/${id}`, {
       method: 'DELETE',
     });
     alert('Venda deletada com sucesso!');
@@ -124,8 +125,10 @@
       },
 
       async total() {
+        
         try {
-    const resposta = await fetch('https://sistema-caixa-hyyk.onrender.com/totalVendas', {
+          const apiurl = import.meta.env.VITE_API_URL;
+    const resposta = await fetch(`${apiurl}/totalVendas`, {
         method: 'GET'
     });
 
