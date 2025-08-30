@@ -1,73 +1,91 @@
-# 🧾 Sistema de Caixa - MVP
+🧾 Sistema de Caixa - MVP
 
-Este é um sistema de caixa simples, desenvolvido com o objetivo de atender pequenos comerciantes que precisam de uma solução prática, rápida e funcional para gerenciar vendas e estoque.
+Um sistema de caixa simples e funcional, desenvolvido para pequenos comerciantes que precisam de uma solução prática e rápida para gerenciar vendas e estoque.
 
----
+🎯 Propósito do Projeto
 
-## 🚀 Tecnologias Utilizadas
+O objetivo principal deste sistema é facilitar o dia a dia de pequenos empreendedores, oferecendo uma ferramenta digital acessível que:
 
-### 💻 Front-End:
-- HTML5
-- CSS3
-- JavaScript
-- Vue.js
-- Bootstrap
+Reduz erros no registro de vendas.
 
-### 🛠️ Back-End:
-- Node.js
-- Express.js
+Ajuda no nas operações diárias e ainda traz a opção de vizualizae as vendas e quantidade delas que foram feitas no dia
 
-### 🗃️ Banco de Dados:
-- MySQL
+Substitui controles manuais (como cadernos e planilhas).
 
----
+Traz mais organização e agilidade para o negócio.
 
-## 🎯 Funcionalidades
+Esse projeto nasceu da vivência real como operador de caixa, buscando transformar problemas comuns do comércio em uma solução simples, intuitiva e funcional.
 
-- ✅ Cadastro de produtos
-- ✅ Registro de vendas
-- ✅ Controle de estoque
-- ✅ Tela de caixa simples e objetiva
-- ✅ Relatórios básicos (em construção)
+🚀 Tecnologias Utilizadas
+💻 Front-End
 
----
+HTML5
 
-## 📦 Instalação
+CSS3
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/juniorwelson/sistema-caixa.git
+JavaScript
 
-2.Acesse o diretório do projeto: 
-   cd sistema-caixa
+Vue.js
 
-3.Instale as dependências do back-end:
+Bootstrap
 
+🛠️ Back-End
+
+Node.js
+
+Express.js
+
+🗃️ Banco de Dados
+
+MySQL
+
+✅ Funcionalidades
+
+Cadastro de produtos
+
+Registro de vendas
+
+Controle de estoque
+
+Tela de caixa simples e objetiva
+
+Relatórios básicos (em construção)
+
+📦 Instalação e Uso
+
+1-Clone o repositório:
+
+git clone https://github.com/juniorwelson/sistema-caixa.git
+
+
+2-Acesse o diretório do projeto:
+
+cd sistema-caixa
+
+
+3-Instale as dependências do back-end:
 
 cd backend
 npm install
 
-4.Instale as dependências do front-end:
+
+4-Instale as dependências do front-end:
 
 cd ../frontend
 npm install
 
-5.Configure o banco de dados MySQL e o arquivo .env com suas credenciais.
+5-Inicie o servidor:
 
-COMO USAR:
+# dentro da pasta backend
 
-Inicie o servidor com npm run dev/node app.js
+node app.js
 
+📖 Como Usar
 
+Abra o front-end em seu navegador.
 
-Este projeto foi inspirado na vivência real como operador de caixa. O foco é resolver problemas reais por meio da programação e oferecer uma solução digital simples e funcional para pequenos comércios.
+Cadastre os produtos.
 
-👨‍💻 Autor
-Desenvolvido por Welson Junior
-📫www.linkedin.com/in/
-welson-junior-a587b72b8
+Registre vendas no caixa.
 
- 
-📧 eujuniorplus@gmail.com
-
-
+--depois vá em resumo e digite 1234 para visualizar as vendas
